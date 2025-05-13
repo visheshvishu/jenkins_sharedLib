@@ -1,5 +1,5 @@
-def deploy_build_swarm() {
+def call() {
     sh '''
-        docker stack deploy -c docker-compose.yml microservices_stack
+        docker stack deploy -c docker-compose-swarm.yml microservices_stack
     '''
 }
